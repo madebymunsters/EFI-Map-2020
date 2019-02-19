@@ -115,8 +115,8 @@
 
     // The styles for the hover
     'labelBackingHoverStyles': {
-      fill: "#33c",
-      stroke: "#000"
+      fill: "#01B0F0",
+      stroke: "#01B0F0"
     },
 
     'stateSpecificLabelBackingStyles': {},
