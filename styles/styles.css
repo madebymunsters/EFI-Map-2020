@@ -49,12 +49,13 @@ h1 {
   #stateInfo {
     float:none;
     display: block;
-    width: 100%;
+    width: calc(100% - 2em);
   }
   .usmap {
     float: none;
     display: block;
     width:100%;
+    min-height: 600px;
   }
   #map{
     display: block;
