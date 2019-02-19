@@ -40,12 +40,17 @@
 
 html, body {
   font-family: 'IBM Plex Sans', sans-serif;
+  height:700px;
+  overflow:hidden;
 }
 h1 {
   margin:5px 0 10px;
   line-height: 1.2;
 }
 @media screen and (max-width: 980px) {
+  body {
+    height:1500px;
+  }
   #stateInfo {
     float:none;
     display: block;
