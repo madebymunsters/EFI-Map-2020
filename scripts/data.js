@@ -216,4 +216,6 @@ $(document).ready(function() {
       }
 
     });
+
+    $('#map').css('width' , '100%').css('height' , 'auto')
 });
