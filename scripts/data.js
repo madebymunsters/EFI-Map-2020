@@ -217,5 +217,5 @@ $(document).ready(function() {
 
     });
 
-    $('#map').css('width' , '100%').css('height' , 'auto')
+    $('#map').css('width' , '100%').css('height' , '100%')
 });
