@@ -15,6 +15,7 @@ body {
   display: inline-block;
   width: 63%;
   margin-right: 1%;
+  padding-top:80px;
 }
 #map{
   display: block;
