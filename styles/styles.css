@@ -33,7 +33,8 @@ body {
   display: inline-block;
   width: calc(35% - 2em);
   padding: 1em;
-  border: 1px solid gray;
+  border: 1px solid #E1E1E1;
+  height:95%;
 }
 .sources p{
   font-size: 14px;
