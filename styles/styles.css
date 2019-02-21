@@ -7,7 +7,7 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   display: block;
-  height: 700px;
+  height: 750px;
   overflow: hidden;
 }
 .usmap {
@@ -33,6 +33,16 @@ body {
   width: calc(35% - 2em);
   padding: 1em;
   border: 1px solid gray;
+}
+.sources p{
+  font-size: 14px;
+}
+.sources p a {
+  color: #03B0F0;
+}
+ol {
+  margin-left: 0;
+  padding-left: 20px;
 }
 
 
