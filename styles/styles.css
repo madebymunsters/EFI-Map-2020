@@ -4,10 +4,10 @@ body {
   margin: 0 auto;
 }
 .stateMaps {
-  max-width: 1400px;
+  max-width: 1920px;
   margin: 0 auto;
   display: block;
-  height: 750px;
+  height: 900px;
   overflow: hidden;
 }
 .usmap {
