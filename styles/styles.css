@@ -15,7 +15,7 @@ body {
   display: inline-block;
   width: 70%;
   margin-right: 1%;
-  padding-top:0px;
+  padding-top:50px;
 }
 #map{
   display: block;
@@ -25,7 +25,7 @@ body {
   position: relative;
   top: 0;
   left: 0;
-  width: 130%;
+  width: 110%;
   height: 100%;
 }
 #stateInfo {
