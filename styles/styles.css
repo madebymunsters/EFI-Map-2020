@@ -33,6 +33,7 @@ body {
   border: 1px solid #E1E1E1;
   min-height: 50%;
   height:auto;
+  margin-top:80px;
 }
 .sources p{
   font-size: 14px;
