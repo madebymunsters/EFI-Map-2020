@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EFI Map</title>
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+	<style>
+		body {
+		  font-family: 'IBM Plex Sans', sans-serif;
+		}
+		.tabs {
+		  position: relative;
+		  min-height: 200px; /* This part sucks */
+		  clear: both;
+		  margin: 25px 0;
+		}
+		.tab {
+			display:block;
+		}
+		.tab label {
+			display: block;
+			text-align: center;
+		  background: #fff;
+			margin-bottom: 10px;
+		  padding: 10px 20px;
+		  border: 2px solid #0069A8;
+		  margin-left: 10px;
+		  position: relative;
+		  left: 1px;
+			color: #0069A8;
+			border-radius: 100px;
+		}
+		.tab [type=radio] {
+		  display: none;
+		}
+		.content2 {
+		  position: absolute;
+		  top: 300px;
+		  left: 0;
+		  background: white;
+		  right: 0;
+		  bottom: 0;
+		  padding: 20px;
+			height: 200vh;
+		}
+		[type=radio]:checked ~ label {
+		  background: #0069A8;
+		  color: white;
+		  z-index: 2;
+		}
+		[type=radio]:checked ~ label ~ .content2 {
+		  z-index: 1;
+		}
+		h6 {
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 1.2em;
+		}
+		h5 {
+			font-size: 1.2em;
+			text-transform: uppercase;
+			color: #666666;
+		}
+		.col-left {
+			width: 100%;
+
+		}
+		.col-right {
+			width: 100%;
+		}
+		@media screen and (min-width: 767px) {
+			.tab {
+				display:inline-block;
+			}
+			.tab label {
+			}
+			.content2 {
+				height: 200vh;
+				top: 70px;
+			}
+			.col-left {
+				width: 63%;
+				margin-right: 2%;
+				display: inline-block;
+				vertical-align: top;
+			}
+			.col-right {
+				width: 34%;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+
+</head>
+<body>
+	<h6>Select a breakdown by sector</h6>
+	<div class="tabs">
+
+   <div class="tab">
+       <input type="radio" id="tab-1" name="tab-group-1" checked>
+       <label for="tab-1">Fuels</label>
+
+       <div class="content2">
+           <h2>Fuels</h2>
+					 <p>Fuels employment encompasses all work related to fuel extraction and mining, including petroleum refineries and firms that support coal mining, oil, and gas field machinery manufacturing. Workers across both the forestry and agriculture industries that support fuel production with corn ethanol, biodiesels, and fuel wood are also included in the fuel employment data.</p>
+
+					 <div class="col-left">
+						 <h5>Trends Over Time</h5>
+					 	<div id="highcharts-2Yvv3lZF"><script src="https://app.everviz.com/inject/2Yvv3lZF/" defer="defer"></script></div>
+					 </div>
+					 <div class="col-right">
+						 <h5>Trends in the last year</h5>
+						 <ul>
+						 	<li><strong>2019 Job Gain:</strong> In 2019, the Fuels sector grew by approximately 26,100 jobs, or about 2 percent for a total of 1,148,893 jobs.</li>
+							<li><strong>Oil and Gas Growth Continues:</strong> Oil and natural gas employers added the most new jobs, more than 18,000, employing 615,500 and 276,000 respectively.</li>
+							<li><strong>Coal Stable:</strong> Coal fuels jobs increased by 612 jobs (less than 1 percent), totaling about 75,500.</li>
+							<li><strong>Biofuels:</strong> While corn ethanol declined slightly, woody biomass and other biofuels added 775 jobs, for a growth rate of nearly 2 percent.</li>
+							<li><strong>2020 Expectations:</strong> Employers in the Fuels sector anticipate nearly 2 percent job growth in 2020, with most of the increase expected in natural gas.</li>
+						 </ul>
+					 </div>
+
+       </div>
+   </div>
+
+   <div class="tab">
+       <input type="radio" id="tab-2" name="tab-group-1">
+       <label for="tab-2">Electric Power Generation	</label>
+
+       <div class="content2">
+				 <h2>Electric Power Generation</h2>
+				 <p>Electric Power Generation (EPG) covers all utility and non-utility employment across electric generating technologies, including fossil fuels, nuclear, and renewable energy technologies. Also included in the employment totals are any firms engaged in facility construction, turbine and other generation equipment manufacturing, operations and maintenance, and wholesale parts distribution for all electric generation technologies.</p>
+				 <div class="col-left">
+					 <h5>Trends over Time</h5>
+				 	<div id="highcharts-nRGeRTqs"><script src="https://app.everviz.com/inject/nRGeRTqs/" defer="defer"></script></div>
+				 </div>
+				 <div class="col-right">
+					 <h6>Trends in the last year</h6>
+					 <ul>
+						<li><strong>2019 Job Gain:</strong> In 2019, the Electric Power Generation sector gained 21,245 jobs, increasing by more than 2 percent to a total of 896,830 jobs, reversing a decline in 2018.</li>
+						<li><strong>Technology Shifts:</strong> Advanced and traditional natural gas added the most new jobs, 9,100, while majority-time solar followed, gaining 5,700 jobs. Other technologies that grew included wind, combined heat and power, hydro, and geothermal. Nuclear and coal generation declined.</li>
+						<li><strong>Electric Power Generation Mix:</strong> From 2006 to 2018, net electricity generation from natural gas increased by 86 percent while net generation from coal declined by 42 percent. In 2018 and 2019, coal generation employment declined by over 14 percent, losing over 13,000 jobs.</li>
+						<li><strong>2020 Expectations:</strong> Electric Power Generation employers anticipated 4.8 percent job growth in 2020, with most of the increase expected in renewable generation construction.</li>
+					 </ul>
+				 </div>
+
+       </div>
+   </div>
+
+    <div class="tab">
+       <input type="radio" id="tab-3" name="tab-group-1">
+       <label for="tab-3">Transmission, Distribution &amp; Storage</label>
+
+       <div class="content2">
+				 <h2>Transmission, Distribution &amp; Storage</h2>
+				 <p>Transmission, Distribution, and Storage (TDS) infrastructure for electric power and fuel links energy supplies to intermediate and end users.</p>
+				 <div class="col-left">
+					 <h5>Trends over Time</h5>
+				 		<div id="highcharts-kon37mZ-"><script src="https://app.everviz.com/inject/kon37mZ-/" defer="defer"></script></div>
+				 </div>
+				 <div class="col-right">
+					 <h5>Trends in the last year</h5>
+					 <ul>
+						<li><strong>2019 TDS Employment:</strong> Excluding retail employees in gas stations and fuel dealers, 1,383,646 workers were employed in Transmission, Distribution, and Storage, adding 17,800 new jobs.</li>
+						<li><strong>2020 Expectations:</strong> TDS employers predict 3.5 percent job growth in 2020, led by construction firms who anticipate 6.7 percent growth, followed by professional and business services and manufacturing employers who anticipate 7.6 percent and 3.5 percent growth, respectively.</li>
+						<li><strong>Key Industry Sectors:</strong> The construction sector employed 36 percent of all TDS workers, while the utility industry employed another 30 percent</li>
+					 </ul>
+				 </div>
+
+       </div>
+   </div>
+
+	 <div class="tab">
+			<input type="radio" id="tab-4" name="tab-group-1">
+			<label for="tab-4">Energy Efficiency</label>
+
+			<div class="content2">
+				<h2>Energy Efficiency</h2>
+				<p>Energy Efficiency employment covers both the production and installation of energy-saving products and the provision of services that reduce end-use energy consumption. These jobs, as specified in the current survey, include the manufacture of ENERGY STAR®-labeled products, as well as building design and contracting services that provide insulation, improve natural lighting, and reduce overall energy consumption across homes and businesses.</p>
+				<div class="col-left">
+					<h5>Trends over Time</h5>
+						<div id="highcharts-GtSnvHh2"><script src="https://app.everviz.com/inject/GtSnvHh2/" defer="defer"></script></div>
+				</div>
+
+				<div class="col-right">
+					<h5>Trends in the last year</h5>
+					<ul>
+					 <li><strong>2019 Job Growth:</strong> In 2019, the Energy Efficiency sector continued to produce the most new jobs of any energy sector–more than 54,000–with 2,378,893 jobs in total. Demand growth for efficient technology and building upgrades has driven expansion across many traditional industries including construction trades (which added more than 27,600 jobs) and professional services (which added nearly 14,800 employees).</li>
+					 <li><strong>2020 Expectations:</strong> Energy Efficiency employers report a projected growth rate for employment in 2020 of 3 percent or nearly 71,000 new jobs. Construction employers report expected Energy Efficiency job growth of 3.6 percent (48,000 jobs) by the end of 2020.</li>
+					 <li><strong>Key Occupations:</strong> The majority (56 percent) of Energy Efficiency employees worked at construction firms in 2019, installing or servicing Energy Efficiency goods or performing Energy Efficiency related services.68 21 percent of workers in the Energy Efficiency sector were employed in professional and business services.</li>
+					</ul>
+				</div>
+			</div>
+	</div>
+
+	<div class="tab">
+		 <input type="radio" id="tab-5" name="tab-group-1">
+		 <label for="tab-5">Motor Vehicles</label>
+
+		 <div class="content2">
+			 <h2>Motor Vehicles</h2>
+			 <p>Though not considered a sector of the Traditional Energy industry, the Motor Vehicles and Component Parts sector, which includes cars, light-duty and heavy-duty trucks, trailers, and component parts of the foregoing, are included in this report, given both the high energy consumption of their manufacture and their contribution to end-use energy consumption.</p>
+			 <div class="col-left">
+				 <h5>Trends Over Time</h5>
+			 	<div id="highcharts-AOfzdJg4"><script src="https://app.everviz.com/inject/AOfzdJg4/" defer="defer"></script></div>
+			 </div>
+
+			 <div class="col-right">
+				 <h5>Trends in the last year</h5>
+				 <ul>
+					<li><strong>2019 Overall Job Growth:</strong> The Motor Vehicles and Component Parts sector employed 2,556,492 Americans in 2019, adding more than 20,000 workers to the number employed in 2018. This figure excludes dealerships and retailers, which employed more than two million additional workers.</li>
+					<li><strong>Manufacturing stable:</strong> Manufacturing employment, the largest industry sector in Motor Vehicles and Component Parts, contracted only slightly from 1,010,598 to 1,007,138 workers in 2019.</li>
+					<li><strong>Alternative fuels vehicles and hybrids:</strong> Within the overall total for the sector, alternative fuels vehicles and hybrids employed 266,384 workers in 2019, a decline of over 5,300 jobs.</li>
+					<li><strong>Fuel economy:</strong> Nearly 494,000 employees (44 percent), an increase of 8,000, work in the component parts segment of the sector with products that contribute to fuel economy.</li>
+					<li><strong>2020 Expectations:</strong> Motor Vehicles and Component Parts employers anticipate 3.0 percent growth in 2020.</li>
+				 </ul>
+			 </div>
+		 </div>
+ </div>
+
+</div>
+</body>
+</html>
